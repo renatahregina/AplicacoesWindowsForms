@@ -9,9 +9,8 @@ namespace Q4_TabuadaTradicional
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tabuada.Items.Clear();
 
-            int numero = int.Parse(textBox1.Text);
+            int numero = int.Parse(txtNumero.Text);
 
             for (int i = 1; i <= 10; i++)
             {

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtNumero = new TextBox();
+            btnGerar = new Button();
             Tabuada = new ListBox();
             SuspendLayout();
             // 
@@ -43,40 +43,40 @@
             label1.TabIndex = 0;
             label1.Text = "Digite um número para realizar a tabuada:";
             // 
-            // textBox1
+            // txtNumero
             // 
-            textBox1.Location = new Point(101, 56);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(58, 23);
-            textBox1.TabIndex = 1;
+            txtNumero.Location = new Point(93, 57);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(58, 23);
+            txtNumero.TabIndex = 1;
             // 
-            // button1
+            // btnGerar
             // 
-            button1.Location = new Point(87, 85);
-            button1.Name = "button1";
-            button1.Size = new Size(85, 24);
-            button1.TabIndex = 2;
-            button1.Text = "Verificar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnGerar.Location = new Point(79, 96);
+            btnGerar.Name = "btnGerar";
+            btnGerar.Size = new Size(85, 24);
+            btnGerar.TabIndex = 2;
+            btnGerar.Text = "Gerar";
+            btnGerar.UseVisualStyleBackColor = true;
+            btnGerar.Click += button1_Click;
             // 
             // Tabuada
             // 
             Tabuada.FormattingEnabled = true;
             Tabuada.ItemHeight = 15;
-            Tabuada.Location = new Point(57, 115);
+            Tabuada.Location = new Point(79, 142);
             Tabuada.Name = "Tabuada";
-            Tabuada.Size = new Size(152, 244);
+            Tabuada.Size = new Size(85, 199);
             Tabuada.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(251, 379);
+            ClientSize = new Size(243, 353);
             Controls.Add(Tabuada);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnGerar);
+            Controls.Add(txtNumero);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -87,8 +87,8 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtNumero;
+        private Button btnGerar;
         private ListBox Tabuada;
     }
 }

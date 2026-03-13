@@ -6,5 +6,17 @@ namespace Q5_CadastroSimples
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Pessoas novapessoa = new Pessoas();
+
+            novapessoa.pessoa = txtnome.Text;
+            novapessoa.idade = txtidade.Text;
+
+            Repositorio.adicionarpessoa.Add(novapessoa);
+            lstpessoas.Items.Add($"{novapessoa.pessoa} {novapessoa.idade}");
+
+        }
     }
 }
